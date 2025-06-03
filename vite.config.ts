@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import cui from '@consensys/ui-config/vite';
+import ds3 from '@consensys/ds3-config/vite';
 import themeConfig from "./theme.config";
 
 export default defineConfig({
   plugins: [
-    cui(themeConfig),
+    ds3(themeConfig),
   ],
 })

@@ -1,8 +1,8 @@
-# Vite + CUI
+# Vite + DS3
 
-This example provides a minimal setup to get CUI working in Vite.
+This example provides a minimal setup to get DS3 working in Vite.
 
-## Installing CUI
+## Installing DS3
 
 This template was created with the following steps:
 
@@ -17,10 +17,10 @@ pnpm create vite
 Install dependencies:
 
 ```bash
-pnpm add @consensys/ui-config @consensys/ui react-native-web react-native-safe-area-context
+pnpm add @consensys/ds3-config @consensys/ds3 react-native-web react-native-safe-area-context
 ```
 
-### CUI Configuration
+### DS3 Configuration
 
 Create `theme.config.js` file:
 
@@ -31,7 +31,7 @@ touch theme.config.js
 Configure `theme.config.js`:
 
 ```js
-const { generateConfig } = require('@consensys/ui-theme');
+const { generateConfig } = require('@consensys/ds3-theme');
 
 module.exports = generateConfig({
   themes: {
@@ -54,14 +54,14 @@ module.exports = generateConfig({
 Under `src/main.tsx`, add the following:
 
 ```tsx
-import { ThemeProvider } from "@consensys/ui";
+import { ThemeProvider } from "@consensys/ds3";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 // ...
 
 return (
   <SafeAreaProvider>
-      <ThemeProvider config={import.meta.env.CUI}>
+      <ThemeProvider config={import.meta.env.DS3}>
          // ...
       </ThemeProvider>
   </SafeAreaProvider>
@@ -79,7 +79,7 @@ pnpm exec tailwindcss init -p
 Configure `tailwind.config.js`:
 
 ```js
-import nativewindPreset from "@consensys/ui-config/nativewind";
+import nativewindPreset from "@consensys/ds3-config/nativewind";
 import themeConfig from "./theme.config";
 
 /** @type {import('tailwindcss').Config} */
@@ -87,7 +87,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    './node_modules/@consensys/ui/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@consensys/ds3/**/*.{js,jsx,ts,tsx}',
     '!node_modules/**/*.{js,ts,jsx,tsx}',
   ],
   presets: [nativewindPreset(themeConfig)]
@@ -108,13 +108,13 @@ Replace `vite.config.ts` with the following:
 
 ```js
 import { defineConfig } from 'vite'
-import cui from '@consensys/ui-config/vite';
+import ds3 from '@consensys/ds3-config/vite';
 import themeConfig from "./theme.config";
 
 export default defineConfig(({ command }) => {
   return {
     plugins: [
-      cui(command, themeConfig),
+      ds3(command, themeConfig),
     ],
   }
 });
