@@ -25,14 +25,14 @@ importers:
         version: 4.3.0(rollup@4.41.1)(typescript@5.6.3)(vite@5.4.19(@types/node@22.15.29)(lightningcss@1.30.1)(terser@5.40.0))
     devDependencies:
       '@consensys/ds3':
-        specifier: 0.0.1
-        version: 0.0.1(@babel/core@7.27.4)(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
+        specifier: 0.0.2
+        version: 0.0.2(@babel/core@7.27.4)(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
       '@consensys/ds3-config':
-        specifier: 0.0.1
-        version: 0.0.1(@types/node@22.15.29)(lightningcss@1.30.1)(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-svg@15.12.0(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(terser@5.40.0)
+        specifier: 0.0.2
+        version: 0.0.2(@types/node@22.15.29)(lightningcss@1.30.1)(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-svg@15.12.0(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(terser@5.40.0)
       '@consensys/ds3-theme':
-        specifier: 0.0.1
-        version: 0.0.1
+        specifier: 0.0.2
+        version: 0.0.2
       '@eslint/js':
         specifier: ^9.13.0
         version: 9.28.0
@@ -570,16 +570,16 @@ packages:
     resolution: {integrity: sha512-Y1GkI4ktrtvmawoSq+4FCVHNryea6uR+qUQy0AGxLSsjCX0nVmkYQMBLHDkXZuo5hGx7eYdnIaslsdBFm7zbUw==}
     engines: {node: '>=6.9.0'}
 
-  '@consensys/ds3-config@0.0.1':
-    resolution: {integrity: sha512-nTXT0D3by8qWqbfr/ankV10QQWSvdrgygArSwL3fOwwEPBg005gITZeD5JXv9i0k0PIwohC6sabVKaLTxfl9SQ==}
+  '@consensys/ds3-config@0.0.2':
+    resolution: {integrity: sha512-b14Ca4Lrs+cjM6bAl37vURCVyKbrxT7VhMtqjEu0QqjrjyXOtuvFY5HcDvV6Z/SQPa1gAz26spAvw+Lh77z3dA==}
     engines: {node: '>=16.0.0'}
 
-  '@consensys/ds3-theme@0.0.1':
-    resolution: {integrity: sha512-6N3domN3kUzpX5IBf08VlaM+u2JHeS8nsu192+72SGFpgSkI8d2Ecp/qErX4rdW83TFWW9eS1lCn1dpNZ7mKSQ==}
+  '@consensys/ds3-theme@0.0.2':
+    resolution: {integrity: sha512-UdXrHqVE3jk/ETSswpa1DAscuUHW9FyZK4Wd1BwzWybx9zR3gUs3PaXIQJePWcc5PMsFxvTSkx6Y3G/KNqCXJw==}
     engines: {node: '>=16.0.0'}
 
-  '@consensys/ds3@0.0.1':
-    resolution: {integrity: sha512-vn9D841H6oL1MAw0gXhzfIvGWBaCK18JU4s6LoHDTcvhDIunk6reVc3LdYB2kWwKxg4dcDrTz3N52HVoQtDmaw==}
+  '@consensys/ds3@0.0.2':
+    resolution: {integrity: sha512-3ViDZOlgwgdl0A6OxUrIrbrYxBz+Aex3BvHvDMbE0Xm6Gh4d76TeSrzJ5qoNpuSiHb+qgu32w3j+/lDV/Snwlg==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -1979,6 +1979,9 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
+  bezier-easing@2.1.0:
+    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
+
   big-integer@1.6.52:
     resolution: {integrity: sha512-QxD8cf2eVqJOOz63z6JIN9BzvVs/dlySa5HGSBH5xtR8dPteIRQnBxxKqkNTiT6jbDTF6jAfrd4oMcND9RGbQg==}
     engines: {node: '>=0.6'}
@@ -2102,6 +2105,9 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  colorjs.io@0.5.2:
+    resolution: {integrity: sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw==}
 
   commander@12.1.0:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
@@ -4586,10 +4592,10 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@consensys/ds3-config@0.0.1(@types/node@22.15.29)(lightningcss@1.30.1)(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-svg@15.12.0(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(terser@5.40.0)':
+  '@consensys/ds3-config@0.0.2(@types/node@22.15.29)(lightningcss@1.30.1)(react-native-reanimated@3.18.0(@babel/core@7.27.4)(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-svg@15.12.0(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(terser@5.40.0)':
     dependencies:
       '@babel/core': 7.27.4
-      '@consensys/ds3-theme': 0.0.1
+      '@consensys/ds3-theme': 0.0.2
       '@expo/config': 10.0.11
       '@expo/metro-config': 0.19.12
       '@vitejs/plugin-react': 4.5.0(vite@5.4.19(@types/node@22.15.29)(lightningcss@1.30.1)(terser@5.40.0))
@@ -4617,18 +4623,20 @@ snapshots:
       - terser
       - ts-node
 
-  '@consensys/ds3-theme@0.0.1':
+  '@consensys/ds3-theme@0.0.2':
     dependencies:
       '@radix-ui/colors': 3.0.0
+      bezier-easing: 2.1.0
+      colorjs.io: 0.5.2
       lodash: 4.17.21
       tailwindcss: 3.4.17
       tailwindcss-animate: 1.0.7(tailwindcss@3.4.17)
     transitivePeerDependencies:
       - ts-node
 
-  '@consensys/ds3@0.0.1(@babel/core@7.27.4)(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)':
+  '@consensys/ds3@0.0.2(@babel/core@7.27.4)(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react-native-safe-area-context@5.4.1(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1))(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@consensys/ds3-theme': 0.0.1
+      '@consensys/ds3-theme': 0.0.2
       '@react-native-async-storage/async-storage': 2.1.2(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))
       '@rn-primitives/avatar': 1.2.0(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
       '@rn-primitives/checkbox': 1.2.0(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react-native-web@0.20.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-native@0.79.2(@babel/core@7.27.4)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
@@ -6188,6 +6196,8 @@ snapshots:
 
   base64-js@1.5.1: {}
 
+  bezier-easing@2.1.0: {}
+
   big-integer@1.6.52: {}
 
   binary-extensions@2.3.0: {}
@@ -6323,6 +6333,8 @@ snapshots:
   color-name@1.1.3: {}
 
   color-name@1.1.4: {}
+
+  colorjs.io@0.5.2: {}
 
   commander@12.1.0: {}
 
