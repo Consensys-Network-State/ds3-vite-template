@@ -21,22 +21,22 @@ pnpm add react-native-web react-native-safe-area-context @consensys/ds3 @consens
 ### 1. Theme Configuration (`theme.config.ts`)
 
 ```typescript
-import { generateConfig } from '@consensys/ds3-theme';
+import { UserConfig } from '@consensys/ds3-theme'
 
-export default generateConfig({
+export default {
   themes: {
     default: {
       colors: {
         neutral: 'gray',
-        primary: 'violet',
-        secondary: 'teal',
+        primary: 'blue',
+        secondary: 'violet',
         error: 'red',
-        warning: 'yellow',
+        warning: 'amber',
         success: 'green',
       },
     },
   },
-});
+} satisfies UserConfig;
 ```
 
 ### 2. Vite Configuration (`vite.config.ts`)
@@ -72,8 +72,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    './node_modules/@consensys/ds3/**/*.{js,jsx,ts,tsx}',
-    '!node_modules/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/@consensys/ds3/src/**/*.{js,jsx,ts,tsx}"
   ],
   presets: [ds3(themeConfig)]
 }
