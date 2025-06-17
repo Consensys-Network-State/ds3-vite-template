@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button, Text, ModeToggle, ThemeSwitcher } from "@consensys/ds3";
+import { Button, ModeToggle, ThemeSwitcher } from "@consensys/ds3";
 
 function App() {
   const [count, setCount] = useState(0)
