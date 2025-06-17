@@ -29,7 +29,7 @@ function App() {
             onClick={() => setCount((count) => count + 1)}
             className="mb-4"
           >
-            <Text>count is {count}</Text>
+            <Button.Text>count is {count}</Button.Text>
           </Button>
         </div>
 
