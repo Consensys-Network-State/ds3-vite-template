@@ -1,34 +1,50 @@
-# Vite + DS3
+# DS3 Vite Template
 
-This example provides a minimal setup to get DS3 working in Vite.
+A pre-configured Vite template with DS3 (Design System 3) already set up and ready to use.
 
-## Installing DS3
+## Features
 
-This template was created with the following steps:
+- 🎨 Pre-configured DS3 design system
+- ⚡️ Built with Vite for fast development
+- 🎯 TypeScript support
+- 🎭 Theme customization support
+- 📱 React Native Web integration
+- 🎯 Tailwind CSS with NativeWind preset
+- 🔒 Safe Area Context support
 
-### Dependencies
+## Documentation
 
-Create a vite application:
+For comprehensive documentation about DS3, including UI components, theming, and configuration, visit the [DS3 Monorepo](https://github.com/Consensys-Network-State/ds3).
 
-```bash
-pnpm create vite
-```
+For details on how this template was set up from scratch, see [SETUP.md](./SETUP.md).
 
-Install dependencies:
+## Quick Start
 
-```bash
-pnpm add @consensys/ds3-config @consensys/ds3 react-native-web react-native-safe-area-context
-```
-
-### DS3 Configuration
-
-Create `theme.config.js` file:
+### Option 1: Using degit
 
 ```bash
-touch theme.config.js
+pnpm dlx degit Consensys-Network-State/ds3-vite-template ui
+cd ui
+pnpm install
+pnpm dev
 ```
 
-Configure `theme.config.js`:
+### Option 2: Using GitHub Template
+
+1. Click "Use this template" on the GitHub repository
+2. Clone your new repository
+3. Install dependencies:
+```bash
+pnpm install
+```
+4. Start the development server:
+```bash
+pnpm dev
+```
+
+## Customization
+
+The template comes with a default theme configuration in `theme.config.js`. You can customize the theme by modifying this file:
 
 ```js
 const { generateConfig } = require('@consensys/ds3-theme');
@@ -36,105 +52,27 @@ const { generateConfig } = require('@consensys/ds3-theme');
 module.exports = generateConfig({
   themes: {
     default: {
-      // use any radix colors - https://www.radix-ui.com/colors
       colors: {
         neutral: 'gray',
-        primary: 'violet',
-        secondary: 'teal',
+        primary: 'blue',
+        secondary: 'violet',
         error: 'red',
-        warning: 'yellow',
+        warning: 'amber',
         success: 'green',
-        // add custom schemes here
       },
     },
   },
 });
 ```
 
-Under `src/main.tsx`, add the following:
+For detailed theme customization options and documentation, refer to the [DS3 Theme Package](https://github.com/Consensys-Network-State/ds3/tree/main/packages/theme).
 
-```tsx
-import { ThemeProvider } from "@consensys/ds3";
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+## Troubleshooting
 
-// ...
+If you encounter the error `Uncaught ReferenceError: exports is not defined`, add this to your `index.html`:
 
-return (
-  <SafeAreaProvider>
-      <ThemeProvider config={import.meta.env.DS3}>
-         // ...
-      </ThemeProvider>
-  </SafeAreaProvider>
-);
-```
-
-### Tailwind Configuration
-
-Instantiate Tailwind:
-
-```
-pnpm exec tailwindcss init -p
-```
-
-Configure `tailwind.config.js`:
-
-```js
-import nativewindPreset from "@consensys/ds3-config/nativewind";
-import themeConfig from "./theme.config";
-
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    './node_modules/@consensys/ds3/**/*.{js,jsx,ts,tsx}',
-    '!node_modules/**/*.{js,ts,jsx,tsx}',
-  ],
-  presets: [nativewindPreset(themeConfig)]
-}
-```
-
-Add to `src/index.css`:
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### Vite Configuration
-
-Replace `vite.config.ts` with the following:
-
-```js
-import { defineConfig } from 'vite'
-import ds3 from '@consensys/ds3-config/vite';
-import themeConfig from "./theme.config";
-
-export default defineConfig(({ command }) => {
-  return {
-    plugins: [
-      ds3(command, themeConfig),
-    ],
-  }
-});
-```
-
-Add types to `src/vite-end.d.ts`
-
-```
-/// <reference types="nativewind/types" />
-```
-
-### Troubleshooting
-
-Sometimes the following error occurs: `Uncaught ReferenceError: exports is not defined`.
-
-Fix by adding this to `index.html`:
-
-```
+```html
 <script>
-  /* https://stackoverflow.com/questions/43042889/typescript-referenceerror-exports-is-not-defined */
   var exports = {};
 </script>
 ```

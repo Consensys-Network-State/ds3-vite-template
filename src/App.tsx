@@ -2,13 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button, Text, ModeToggle, ThemeSwitcher } from "@consensys/ds3";
+import { Button, ModeToggle, ThemeSwitcher } from "@consensys/ds3";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="flex flex-col items-center justify-center h-screen">
       <div className="flex justify-center items-center gap">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo"/>
@@ -29,7 +29,7 @@ function App() {
             onClick={() => setCount((count) => count + 1)}
             className="mb-4"
           >
-            <Text>count is {count}</Text>
+            <Button.Text>count is {count}</Button.Text>
           </Button>
         </div>
 
@@ -40,7 +40,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
