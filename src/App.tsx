@@ -24,7 +24,7 @@ import viteLogo from '/vite.svg'
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-1 text-neutral-12 flex flex-col">
+    <div className="min-h-screen bg-neutral-1 text-neutral-12 flex flex-col bg-primary-1">
       <header className="flex justify-center items-center p-6">
         <div className="flex justify-center sm:justify-end items-center w-full">
           <div className="flex items-center gap-4 px-3 py-2 bg-neutral-2 rounded-lg shadow-sm">
