@@ -1,7 +1,7 @@
 'use client';
 
 import {
-  ModeToggle,
+  ThemeToggle,
   Button,
   ThemeSwitcher,
   Text,
@@ -30,7 +30,7 @@ function App() {
           <div className="flex items-center gap-4 px-3 py-2 bg-neutral-2 rounded-lg shadow-sm">
             <div className="flex items-center gap-2">
               <span className="text-xs text-neutral-10">Mode:</span>
-              <ModeToggle />
+              <ThemeToggle />
             </div>
             <div className="flex items-center gap-2">
               <span className="text-xs text-neutral-10">Theme:</span>
