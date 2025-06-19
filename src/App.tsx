@@ -54,8 +54,8 @@ function App() {
               Vite + DS3
             </Text>
             
-            <Text size="xl" color="neutral" className="max-w-2xl mx-auto mb-3 text-center">
-              The ultimate starter template for DS3 and Vite.
+            <Text size="xl" color="neutral" className="max-w-2xl mx-auto mb-3 text-center text-neutral-11">
+              The starter template for DS3 and Vite.
             </Text>
             
             <hr className="border-t border-neutral-6 w-full max-w-lg mx-auto mb-8" />
